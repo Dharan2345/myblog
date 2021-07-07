@@ -1,0 +1,17 @@
+@font-face {
+    font-family:bubblegum;
+    src: url('../fonts/Bubblegum_Sans/BubblegumSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: tile;
+    src: url('../fonts/Cardo/Cardo-Regular.ttf');
+}
+@font-face {
+    font-family: caps;
+    src: url('../fonts/Gentium_Book_Basic/GentiumBookBasic-Regular.ttf');
+}
+@font-face {
+    font-family: forall;
+    src: url('../fonts/Mate_SC/MateSC-Regular.ttf');
+}

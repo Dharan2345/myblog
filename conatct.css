@@ -1,0 +1,265 @@
+@import url('../css/fonts.css');
+
+
+html,body
+{
+    margin:0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+.text-grey
+{
+    text-shadow: 2px 2px lightslategray;
+}
+.text-grey:active
+{
+    text-shadow: none;
+    top:2px;
+    left:2px;
+}
+.root
+{
+    --grey: #3f4954;
+
+}
+
+/*------------------global class------------------------*/
+a{
+    text-decoration: none;
+    color:var(--grey)
+}
+.flex-row
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul
+{
+    list-style-type: none;
+}
+h2
+{
+    font-family: bubblegum;
+    font-size: 1.5rem;
+}
+h4{
+    font-weight: forall;
+    color: white;
+}
+p
+{
+    color:black;
+}
+
+
+.container
+{
+    margin:2.5vh;
+}
+
+/*------------------global class------------------------*/
+
+/*------------------Navibar-----------------------------*/
+.nav
+{
+    background-color:whitesmoke;
+    padding: 10px 20px;
+    height: 0rem;
+    min-height:8vh;
+    overflow:hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu
+{
+    justify-content:space-between;
+}
+.collapse
+{
+    height:30rem;
+}
+
+.nav .toggle-collapse
+{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons
+{
+    display:flex ;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+    
+}
+.nav .toggle-collapse .toggle-icons i
+{
+   font-size: 1.5rem;
+   color: var(--grey);
+    
+}
+.nav .nav-items
+{
+    display: flex;
+    margin: 0;
+
+}
+.nav .nav-items .nav-link
+{
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: bubblegum;
+    font-size: 1.3rem;
+    color: grey;
+}
+.nav .nav-items .nav-link:hover
+{
+    background-color:lightgrey;
+}
+.nav .nav-items .nav-link:active
+{
+    background-color:black;
+}
+
+.nav .nav-items .nav-link a:hover
+{
+    color: black;
+}
+.nav .nav-items .nav-link a:active
+{
+    color: white;
+}
+.nav .nav-brand a
+{
+    font-size: 2rem;
+    padding: 1rem 0;   
+    display: block;
+    font-family:bubblegum;
+    color:black;
+
+}
+
+/*------------------Navibar--------------------------------------------------------------------*/
+.section
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color:wheat;
+}
+.container-section .content .zany
+{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#ff6699;
+
+}
+.container-section .content .zany:hover{
+    color:black;
+}
+
+.container
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.container-section
+{
+    float: left;
+    width: 55%;
+}
+.image-section
+{
+  
+    margin-right: 75px;
+    height: 500px; 
+    float: right;
+    width: 500px;
+}
+
+.image-section img
+{
+    size: 25%;
+    margin:auto;
+    width: 100%;
+    height: auto;
+}
+.container-section .title
+{
+    font-family: forall;
+    text-transform: uppercase;
+}
+.container-section .content p
+{
+    font-family: bubblegum;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.container-section .social
+{
+    margin: 40px 40px;
+
+}
+.container-section .social i
+{
+    color:#ff6699;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.container-section .social i:hover
+{
+    color:black;
+}
+
+/*    viewport lessthan or equal to 750px      */
+@media only screen and (max-width:750px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction:column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+        }
+    .content-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+    }
+    .image-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+    }
+    .image-section img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+    }
+    .social{
+        text-align: center;
+        flex-direction: row;
+        padding: 20px;
+    }
+    .container-section .title{
+            text-align: center;
+            font-size: 25px;
+    }
+  
+}
+
+/*    viewport lessthan or equal to 750px      */

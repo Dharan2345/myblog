@@ -1,0 +1,385 @@
+@import url('../css/fonts.css');
+
+
+html,body
+{
+    margin:0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+.root
+{
+    --grey: #3f4954;
+
+}
+.nav-brand .text-grey
+{
+    text-shadow: 2px 2px lightslategray;
+}
+.nav-brand .text-grey:active
+{
+    text-shadow: none;
+    top:2px;
+    left:2px;
+}
+
+/*------------------global class------------------------*/
+a{
+    text-decoration: none;
+    color:var(--grey)
+}
+.flex-row
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul
+{
+    list-style-type: none;
+}
+h2
+{
+    font-family: bubblegum;
+    font-size: 1.5rem;
+}
+h4{
+    font-weight: forall;
+    color: white;
+}
+p
+{
+    color:white;
+}
+
+button.btn
+{
+    margin-top:47vh;
+    margin-right: 10vh;
+    border-style:none;
+    border-radius: 4rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 2rem;
+    font-family:inherit ;
+    cursor: pointer;
+    color:whitesmoke;
+    outline: none;
+}
+.container
+{
+    margin:2.5vh;
+}
+.zany
+{
+    position: relative;
+    height: 280px;
+    margin-left: 220px;
+    margin-bottom: 100px;
+}
+/*------------------global class------------------------*/
+
+/*------------------Navibar-----------------------------*/
+nav
+{
+    position: ;
+}
+.nav
+{
+    background-color:white;
+    padding: 10px 20px;
+    height: 0rem;
+    min-height:8vh;
+    overflow:hidden;
+    transition: height 1s ease-in-out;
+    
+}
+.nav .nav-menu
+{
+    justify-content:space-between;
+}
+.collapse
+{
+    height:30rem;
+}
+
+.nav .toggle-collapse
+{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons
+{
+    display:flex ;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+    
+}
+.nav .toggle-collapse .toggle-icons i
+{
+   font-size: 1.5rem;
+   color: var(--grey);
+    
+}
+.nav .nav-items
+{
+    display: flex;
+    margin: 0;
+
+}
+.nav .nav-items .nav-link
+{
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
+    position: relative;
+    font-family: bubblegum;
+    font-size: 1.3rem;
+    color: grey;
+}
+.nav .nav-items li
+{
+    float: right;
+}
+.nav .nav-items .nav-link:hover
+{
+    background-color:lightgrey;
+}
+.nav .nav-items .nav-link:active
+{
+    background-color:black;
+}
+.nav .nav-items .nav-link a:hover
+{
+    color: black;
+}
+.nav .nav-items .nav-link a:active
+{
+    color:white;
+}
+.nav .nav-brand a
+{
+    font-size: 2rem;
+    padding: 1rem 0;   
+    display: block;
+    font-family:bubblegum;
+    color:black;
+
+}
+
+/*------------------Navibar--------------------------------------------------------------------*/
+
+/*------------------mainsection--------------------------------------------------------------*/
+/*------------------title------------------------------------------------------------------------*/
+main .site-title
+{
+    background: url(../assets/realzany.jpg);
+    background-size:cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+
+}
+main .site-title .site-background
+{
+    padding-top: 15rem;
+    text-align: center;
+    color:black;
+}
+main .site-title .h1
+{
+    margin: 3rem;
+}
+main .site-title .btn
+{
+    align-content: center;
+    background:black;
+    margin-right: 5rem;
+}
+main .site-title .btn:hover
+{
+   background:transparent;
+   border: 1px solid black ;
+   color:black;
+}
+/*--------x----------title------------------------x------------------------------------------------*/
+/*------------------------------blog---------------------------------------------------------*/
+main .blog
+{
+    background-image:url();
+    
+    background-repeat: repeat;
+    background-position:right;
+    height: 100vh;
+    width:100%;
+    background-size: 65%;
+}
+main .blog .blog-post
+{
+    padding :0rem;
+}
+
+main .blog-post .blog-content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    padding: 3rem 2rem;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px grey;
+}
+main .blog-content .blog-title
+{
+    padding: 0rem;
+}
+main .blog-content .btn
+{
+    font-family: 'Lucida Sans';
+    font-size: 1.7rem;
+    padding-left :2rem;
+    padding-right: 2rem;
+    margin:0.5rem;
+    background:black;
+}
+main .blog-content .btn:hover
+{
+   background:transparent;
+   border: 1px solid black ;
+   color:black;
+}
+section .container .owl-nav
+{
+    position:absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next
+{
+    color:cornflowerblue;
+    background:transparent;
+    font-size: 5rem;
+}
+.owl-theme .owl-nav [class*='owl-']:hover
+{
+    background: transparent;
+    color:black
+}
+.owl-theme .owl-nav [class*='owl-']
+{
+    outline: none;
+
+}
+
+/*------------------------------blog---------------------------------------------------------*/
+/*----------------------------footer--------------------------------------------------------*/
+footer.footer
+{
+    height: 30%;
+    background:black;
+    
+}
+footer.footer .container
+{
+    height: 50%;
+    text-align: center;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+footer.footer .container .about-us
+{
+    padding-bottom: 0%;
+
+}
+footer.footer .container .social
+{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+footer.footer .container > div
+{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding :3rem .9rem;
+}
+footer.footer .container .about-us h2{
+    text-align: center;
+    color:white;
+
+}
+footer.footer .container h2{
+    color: white;
+}
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin:.3rem .4rem;
+}
+.footer .social
+{
+    margin-bottom: 7px;
+    color: white;
+    padding: 1.5rem 0;
+}
+.footer .social i
+{
+    padding: 0 .5rem;
+}
+.footer .social i:hover
+{
+    color:#a1c4cf;
+}
+footer.footer .follow i{
+    color: white;
+    padding: 0rem 0.4rem ;
+}
+footer.footer .rights
+{
+    justify-content: center;
+}
+footer.footer .move-up
+{
+    position: absolute;
+    right: 6%;
+    top:50%;
+}
+footer.footer .move-up span
+{
+    color:midnightblue;
+}
+footer.footer .move-up span:hover{
+    color:white;
+    cursor: pointer;
+}
+
+
+/*----------------------------footer--------------------------------------------------------*/
+
+/*--------x----------mainsection-----------x------------------------------------------------------------*/
+
+
+/*    viewport lessthan or equal to 750px      */
+@media only screen and (max-width:750px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction:column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+    main .site-title{
+        background-size:cover ;
+        
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/*    viewport lessthan or equal to 750px      */
